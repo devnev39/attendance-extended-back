@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.108.0"
+firebase-admin = "^6.3.0"
 
 
 [build-system]
