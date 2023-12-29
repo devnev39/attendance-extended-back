@@ -6,6 +6,7 @@ def get_all_students():
     return docs
 
 def add_attendance_sequentially(attendance: list, date: str):
+    db.collection("attendance").document(date).set({"date": date})
     for att in attendance:
         doc_ref = db.collection("attendance").document(date).collection("attendance").document(att["role_id"])
         doc_ref.set(att)

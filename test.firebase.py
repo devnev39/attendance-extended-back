@@ -11,4 +11,7 @@ app = firebase_admin.initialize_app(
 bucket = storage.bucket()
 db = firestore.client()
 d = str(datetime.datetime.now().date())
-db.collection("attendance").document(d).collection("attendance").document("20EL012").set({"role_id": "20EL012"})
+# db.collection("attendance").document(d).collection("attendance").document("20EL012").set({"role_id": "20EL012"})
+docs = db.collection("attendance").stream()
+docs = [doc.to_dict() for doc in docs]
+print(docs)
