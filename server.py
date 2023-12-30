@@ -11,7 +11,7 @@ origins = [
     "http://localhost:8080",
     "http://dhruvs-macbook-air.local:5173",
     "http://192.168.0.105:5173",
-    "https://attendance-extended-front.vercel.app/"
+    "https://attendance-extended-front.vercel.app"
 ]
 
 app.add_middleware(
